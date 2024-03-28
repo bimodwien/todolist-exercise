@@ -15,7 +15,6 @@ function App() {
 
   function handleDelete(item) {
     setList(list.filter((todo) => todo.id != item.id));
-    list[list.length - 1].id = 0;
   }
 
   function handleAdd(params) {
@@ -37,7 +36,7 @@ function App() {
 
   function handleSubmit(params) {
     params.preventDefault();
-    const id = list[list.length - 1].id + 1;
+    const id = !list.length ? 1 : list[list.length - 1].id + 1;
     setList([...list, { ...input, id }]);
     setInput({ ...input, name: "" });
   }
