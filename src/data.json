@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "username": "bimo",
+      "password": "bimobimo"
+    },
+    {
+      "id": 2,
+      "username": "dwien",
+      "password": "bimobimo"
+    },
+    {
+      "id": 3,
+      "username": "prabowo",
+      "password": "bimobimo"
+    }
+  ]
+}
